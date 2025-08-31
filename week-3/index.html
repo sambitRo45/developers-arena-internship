@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeoCalc · Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <main class="calc" role="application" aria-label="Calculator">
+      <div class="calc__header">
+        <span class="brand">NeoCalc · Pro</span>
+        <button class="theme-toggle" id="themeBtn" aria-pressed="false" aria-label="Toggle theme">Light</button>
+      </div>
+
+      <section class="display" aria-live="polite" aria-atomic="true">
+        <div class="display__expr" id="expr">&nbsp;</div>
+        <div class="display__value" id="value">0</div>
+      </section>
+
+      <section class="keys" aria-label="Calculator keypad">
+        <button class="btn btn--danger" data-action="clear" aria-label="Clear">AC</button>
+        <button class="btn btn--op" data-action="back" aria-label="Backspace">⌫</button>
+        <button class="btn btn--op" data-value="%" aria-label="Percent">%</button>
+        <button class="btn btn--op" data-value="/" aria-label="Divide">÷</button>
+
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn btn--op" data-value="*" aria-label="Multiply">×</button>
+
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn btn--op" data-value="-" aria-label="Minus">−</button>
+
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn btn--op" data-value="+" aria-label="Plus">+</button>
+
+        <button class="btn btn--wide" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn btn--accent" data-action="equals" aria-label="Equals">=</button>
+
+        <button class="btn btn--op" data-action="sign" aria-label="Toggle sign">±</button>
+        <button class="btn btn--op" data-action="square" aria-label="Square">x²</button>
+        <button class="btn btn--op" data-action="sqrt" aria-label="Square root">√x</button>
+        <button class="btn btn--op" data-action="paren" aria-label="Parentheses">( )</button>
+      </section>
+    </main>
+
+    <p class="footer">
+      Keyboard: <span class="kbd">0–9</span>, <span class="kbd">+</span> <span class="kbd">-</span> <span class="kbd">*</span> <span class="kbd">/</span>, <span class="kbd">.</span>, <span class="kbd">Enter</span> (=), <span class="kbd">Backspace</span>, <span class="kbd">Esc</span> (AC)
+    </p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
